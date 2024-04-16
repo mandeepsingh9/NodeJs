@@ -5,10 +5,11 @@ const Item = ({item}) => {
     
   async function hadleDelete(id)
   {
-     let obj={"userid":id}
-     console.log(obj);
-         const res= await axios.delete("http://localhost:8080/api/todo",obj)
+    
+    
+         const res= await axios.delete("http://localhost:8080/api/todo",{ data: { userid: id } })
          console.log(res.data);
+         window.location.reload();
   }
   return (
     <div className='todo'>

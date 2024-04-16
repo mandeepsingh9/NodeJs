@@ -16,10 +16,10 @@ const gettodo=async(req,res)=>{
 }
 
 const deleteTodo=async(req,res)=>{
-    const id=req.body;
-    console.log(id);
-    const deletedData = await Todo.deleteMany({ userid: id.userid });
-        console.log(deletedData);
+  const  obj  = req.body;
+    console.log(obj);
+    const deletedData = await Todo.deleteMany({ userid:obj.userid});
+       console.log(deletedData);
   
     res.send("deleted")
 
