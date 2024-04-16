@@ -1,0 +1,67 @@
+*{
+  background-color: rgb(49, 48, 48);
+  color: aliceblue;
+}
+
+.App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;  
+  font-size: 50px;
+  font-weight: bolder;
+  
+ 
+  
+}
+
+input{
+  background-color: rgb(129, 124, 124);
+  height: 30px;
+  width: 400px;
+  border-radius: 20px;
+  border: 2px solid rgb(209, 72, 72);
+  padding: 5px;
+  padding-left: 20px;
+  
+}
+button{
+  height: 35px;
+  float: right;
+  width: 80px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 2px solid rgb(209, 72, 72);
+  background-color: blue;
+}
+
+
+.todo{
+  color: aliceblue;
+  display: flex;
+  border: 2px solid purple;
+  border-radius: 20px ;
+  margin: 20px 30px ;
+  padding: 10px;
+  justify-content: space-between;
+ margin: auto;
+ width: 60%;
+ margin-top: 15px;
+  background-color: rgb(65, 63, 63); 
+}
+
+label{
+  background: transparent;
+
+}
+.todo div{
+  display: flex;
+  gap: 20px;
+  background:transparent;
+}
+
+@media screen and (max-width: 800px) {
+  .todo {
+     width: 90%;
+  }
+}
