@@ -15,7 +15,7 @@ const Item = ({item}) => {
     <div className='todo'>
         <label>{item.item}</label>
         <div>
-             <label>✏️</label>
+             <label >✏️</label>
              <label onClick={()=>hadleDelete(item.userid)}>❌</label>
         </div>
     </div>
