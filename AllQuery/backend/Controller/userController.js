@@ -59,12 +59,23 @@ const createuserController=async(req,res)=>{
        
         const updatedata=await User.findByIdAndUpdate(id,obj,{ new: true })
         console.log(updatedata);
-    res.send(obj)
+    res.send("suceessfuly update")
     }
 
+
+    const updatemanyController=async(req,res)=>{
+
+          const data=req.query.name;
+          const obj=req.body;
+          console.log(data,obj);
+
+           const updatedata=await User.updateMany({"name":data},obj)
+          res.send("Successfuly Update")
+
+    }
 
     //.........update using Patch Method........................//
 
 
 
-module.exports={getuserController,createuserController,getbyidController,getbyAnyOneController,updateUserController}
+module.exports={getuserController,createuserController,getbyidController,getbyAnyOneController,updateUserController,updatemanyController}
